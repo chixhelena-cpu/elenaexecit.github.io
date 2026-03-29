@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Елена Чигиринова — Senior IT Recruiter & HR Advisor</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fffdf9;--ink:#151310;--mid:#70655a;--pale:#a89b8c;--gold:#c9a96e;--sand:#f3ede3;--cream:#f9f5ee;--serif:'Instrument Serif',Georgia,serif;--sans:'DM Sans',sans-serif;--mono:'Space Mono',monospace}
+html{scroll-behavior:smooth}body{font-family:var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}::selection{background:var(--gold);color:#fff}
+nav{position:fixed;top:0;width:100%;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:60px;background:rgba(255,253,249,.88);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-bottom:1px solid rgba(0,0,0,.03)}
+.n-logo{font-family:var(--serif);font-size:1.05rem}.n-links{display:flex;gap:32px}.n-links a{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--mid);transition:color .25s}.n-links a:hover{color:var(--ink)}
+.hero{display:flex;align-items:stretch;min-height:100vh}.hero-left{flex:1;display:flex;flex-direction:column;justify-content:center;padding:140px 72px 80px}
+.hero-tag{font-family:var(--mono);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:36px}
+.hero-left h1{font-family:var(--serif);font-size:3.8rem;font-weight:400;line-height:1.12;margin-bottom:28px}.hero-left h1 i{font-style:italic;color:var(--gold)}
+.hero-p{font-size:1.02rem;color:var(--mid);line-height:1.85;max-width:500px;font-weight:300;margin-bottom:48px}
+.hero-btns{display:flex;gap:12px}.hb{padding:15px 32px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;font-family:var(--sans);transition:all .3s;cursor:pointer}
+.hb-fill{background:var(--ink);color:#fff;border:none}.hb-fill:hover{background:var(--gold)}.hb-line{background:none;color:var(--ink);border:1px solid rgba(0,0,0,.12)}.hb-line:hover{border-color:var(--gold);color:var(--gold)}
+.hero-right{flex:0 0 42%;position:relative;overflow:hidden;background:var(--sand)}.hero-right img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:contrast(1.04) saturate(1.05)}
+.hero-right::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(243,237,227,.5) 100%)}
+.nums{display:grid;grid-template-columns:repeat(5,1fr);background:var(--ink)}.num-c{text-align:center;padding:48px 20px;position:relative}
+.num-c:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;height:60%;width:1px;background:rgba(255,255,255,.06)}
+.num-v{font-family:var(--serif);font-size:2.6rem;color:#fff;line-height:1}.num-l{font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:10px}
+.s{padding:112px 72px}.s-tag{font-family:var(--mono);font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.s-h{font-family:var(--serif);font-size:2.6rem;font-weight:400;line-height:1.2;margin-bottom:60px;max-width:660px}.s-h i{font-style:italic;color:var(--gold)}
+.ab{display:grid;grid-template-columns:5fr 3fr;gap:80px}
+.ab-txt p{font-size:.9rem;color:var(--mid);line-height:1.9;font-weight:300;margin-bottom:18px;text-align:justify;hyphens:auto}
+.ab-txt p:first-child::first-letter{font-family:var(--serif);font-size:3.4rem;float:left;margin:2px 14px 0 0;line-height:.85;color:var(--gold);font-weight:400}
+.ab-side{background:var(--sand);padding:40px;position:sticky;top:80px;border-left:3px solid var(--gold)}
+.ab-side h3{font-family:var(--serif);font-size:1.1rem;margin-bottom:24px}.ab-side dl{display:grid;gap:16px}
+.ab-side dt{font-family:var(--mono);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.ab-side dd{font-size:.8rem;color:var(--mid);line-height:1.55;font-weight:300}
+.sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(0,0,0,.06)}
+.sv{background:var(--bg);padding:52px 36px;position:relative;transition:background .35s}.sv:hover{background:var(--cream)}
+.sv::before{content:attr(data-n);font-family:var(--serif);font-size:4rem;position:absolute;top:20px;right:28px;color:var(--sand);line-height:1;transition:color .35s}
+.sv:hover::before{color:rgba(201,169,110,.15)}.sv h3{font-family:var(--serif);font-size:1.1rem;font-weight:400;margin-bottom:14px}
+.sv p{font-size:.8rem;color:var(--mid);line-height:1.8;font-weight:300}
+.tl{max-width:820px}.ti{display:grid;grid-template-columns:140px 1fr;gap:48px;padding:44px 0;border-bottom:1px solid var(--sand)}.ti:last-child{border:none}
+.ti-d{font-family:var(--mono);font-size:.72rem;color:var(--pale);padding-top:6px}.ti-b h3{font-family:var(--serif);font-size:1.12rem;font-weight:400;margin-bottom:2px}
+.ti-co{font-size:.82rem;color:var(--gold);margin-bottom:10px}.ti-b p{font-size:.82rem;color:var(--mid);line-height:1.8;font-weight:300}
+.ti-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:14px}.tt{font-family:var(--mono);font-size:.5rem;letter-spacing:.06em;padding:3px 8px;border:1px solid var(--sand);color:var(--pale);text-transform:uppercase;transition:all .25s}
+.ti:hover .tt{border-color:var(--gold);color:var(--gold)}
+.rg{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(0,0,0,.05)}
+.rc{background:var(--cream);padding:44px 28px;transition:all .3s}.rc:hover{background:var(--sand)}
+.rc-n{font-family:var(--serif);font-size:2rem;color:var(--gold);margin-bottom:10px;line-height:1}.rc p{font-size:.76rem;color:var(--mid);line-height:1.65;font-weight:300}
+.ws{background:var(--sand)}.ws-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
+.ws-card{background:var(--bg);padding:40px;border-top:2px solid var(--gold)}.ws-card h3{font-family:var(--serif);font-size:1.05rem;margin-bottom:12px;font-weight:400}
+.ws-card p{font-size:.82rem;color:var(--mid);line-height:1.8;font-weight:300}.ws-card .ws-for{font-family:var(--mono);font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-top:14px}
+.ct{background:var(--ink);color:#fff}.ct .s-tag{color:var(--gold)}.ct .s-h{color:#fff}
+.ct-body{display:grid;grid-template-columns:1fr 1fr;gap:80px}.ct-body .lead{color:rgba(255,255,255,.5);font-size:.92rem;line-height:1.85;font-weight:300;margin-bottom:24px}
+.cl{display:flex;flex-direction:column;gap:22px}.cl a{display:flex;gap:20px;text-decoration:none;color:#fff;transition:color .25s;align-items:baseline}.cl a:hover{color:var(--gold)}
+.cl-l{font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.25);width:68px;flex-shrink:0}.cl-v{font-size:.88rem;font-weight:300}
+footer{padding:28px 72px;background:var(--ink);border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between}
+footer p{font-family:var(--mono);font-size:.55rem;color:rgba(255,255,255,.18);letter-spacing:.06em}
+@media(max-width:900px){.hero{flex-direction:column-reverse;min-height:auto}.hero-right{flex:none;height:55vw}.hero-left{padding:48px 24px 56px}.hero-left h1{font-size:2.2rem}.s{padding:64px 24px}.nums{grid-template-columns:repeat(2,1fr)}.num-c:nth-child(2)::after,.num-c:nth-child(4)::after{display:none}.ab,.ct-body{grid-template-columns:1fr}.sv-grid{grid-template-columns:1fr}.rg{grid-template-columns:repeat(2,1fr)}.ws-grid{grid-template-columns:1fr}.ti{grid-template-columns:1fr;gap:6px}nav{padding:0 20px}.n-links{gap:14px}.n-links a{font-size:.6rem}footer{flex-direction:column;gap:6px;padding:20px 24px}}
+@media(max-width:480px){.rg{grid-template-columns:1fr}.nums{grid-template-columns:1fr}.num-c::after{display:none!important}}
+</style>
+</head>
+<body>
+
+<nav><div class="n-logo">Elena Chigirinova</div><div class="n-links"><a href="#about">Обо мне</a><a href="#services">Экспертиза</a><a href="#exp">Опыт</a><a href="#results">Результаты</a><a href="#workshops">Воркшопы</a><a href="#blog">Заметки</a><a href="#contact">Контакты</a></div></nav>
+
+<section class="hero">
+<div class="hero-left">
+<div class="hero-tag">IT Recruitment · Executive Search · HR Advisory</div>
+<h1>Елена Чигиринова<br><i>рекрутинг, который ускоряет продукт</i></h1>
+<p class="hero-p">Senior IT Recruiter & HR-консультант. 9 лет в HR. 500+ наймов за карьеру, 100+ C-level. Строю инженерные команды для tech-компаний. Экономлю бизнесу более 60 миллионов рублей на найме.</p>
+<div class="hero-btns"><a href="#contact" class="hb hb-fill">Написать →</a><a href="#services" class="hb hb-line">Услуги</a></div>
+</div>
+<div class="hero-right"><img src="data:image/jpeg;base64,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" alt="Елена Чигиринова"></div>
+</section>
+
+<div class="nums">
+<div class="num-c"><div class="num-v">500+</div><div class="num-l">наймов за карьеру</div></div>
+<div class="num-c"><div class="num-v">100+</div><div class="num-l">C-level / leadership</div></div>
+<div class="num-c"><div class="num-v">14</div><div class="num-l">дней TTH Senior IT</div></div>
+<div class="num-c"><div class="num-v">95%</div><div class="num-l">Offer Acceptance</div></div>
+<div class="num-c"><div class="num-v">60М₽</div><div class="num-l">экономии для бизнеса</div></div>
+</div>
+
+<section class="s" id="about">
+<div class="s-tag">Обо мне</div>
+<h2 class="s-h">Превращаю HR из затратной функции в <i>стратегическое преимущество</i></h2>
+<div class="ab">
+<div class="ab-txt">
+<p>Девять лет в HR, из них последние пять — в IT-рекрутинге и executive search. Начинала в авиастроении — ПАО «Сухой» и Роскосмос, где занималась L&D, assessment-центрами (25+ проведённых AC, сертификации KPMG, SHL, TalantQ) и succession planning для инженерных руководителей.</p>
+<p>Затем перешла в рекрутинг: консалтинговое агентство Bifighter (28 C-level закрытий — CEO, CFO, CTO, CMO, CHRO), GameDev-холдинг Ocean Digital (100+ IT-наймов, команда 15 рекрутеров), крупнейший агрохолдинг Мираторг (40+ executive-позиций, международный поиск EU/US/MENA, запуск Petfood-дивизиона — команда с нуля, 200М₽ выручки в первый год).</p>
+<p>Последние два года — единственный in-house IT-рекрутер ГК «Астра» (Astra Linux, RuBackup, BRO Software). Пришла при текучести 40% и нулевых процессах. За два года: 240+ IT-наймов, масштабирование команды с 48 до 150+ инженеров, построение рекрутинга с нуля, отказ от четырёх агентств, экономия 60М₽ для бизнеса. Параллельно — HRBP: грейдирование, salary benchmarking, performance review, 15+ воркшопов для руководителей. Текучесть: 8%.</p>
+<p>Глубоко понимаю IT: C++, Python, Go, Java, React, Linux, Kubernetes, Docker, ML/PyTorch. Сертифицирована: Q Metrix Pro (KPMG), SHL Tools, TalantQ Perspectives, HR-Consulting. Английский C1 — провожу интервью на английском.</p>
+</div>
+<div class="ab-side">
+<h3>Ключевые факты</h3>
+<dl>
+<dt>Образование</dt><dd>МАИ, 2 диплома с отличием — Экономика труда и HR-аналитика, Управление персоналом</dd>
+<dt>Сертификации</dt><dd>Q Metrix Pro (KPMG) · SHL Tools · TalantQ Perspectives · HR-Consulting</dd>
+<dt>IT-домены</dt><dd>Cloud · AI/ML · Backup/DR · Storage · SaaS · DevOps · GameDev · FinTech</dd>
+<dt>Стеки</dt><dd>C++ · Python · Go · Java · React · Linux · K8s · Docker · PyTorch</dd>
+<dt>Языки</dt><dd>Русский — родной, Английский — C1</dd>
+<dt>Инструменты</dt><dd>Huntflow · LinkedIn Recruiter · GitHub · Habr · AmazingHiring · Power BI · 1С ЗУП · E-Staff · Поток</dd>
+<dt>AI в работе</dt><dd>Claude · GPT · DeepSeek · Perplexity</dd>
+</dl>
+</div>
+</div>
+</section>
+
+<section class="s" id="services" style="background:var(--sand)">
+<div class="s-tag">Экспертиза</div>
+<h2 class="s-h">Чем могу быть <i>полезна</i></h2>
+<div class="sv-grid">
+<div class="sv" data-n="01"><h3>IT-рекрутинг</h3><p>Full-cycle подбор от junior до CTO. 500+ наймов за карьеру. Сорсинг: LinkedIn, GitHub, Telegram, Habr, AI. Boolean, X-ray. Глубокая оценка стека. TTH в 2× быстрее рынка.</p></div>
+<div class="sv" data-n="02"><h3>Executive Search</h3><p>100+ C-level и leadership-наймов. CTO, CPO, CFO, VP Engineering, HRD, Heads. Market mapping, talent pipeline, конфиденциальный поиск. Международный: ЕС, Израиль, США, MENA.</p></div>
+<div class="sv" data-n="03"><h3>Построение TA с нуля</h3><p>In-house рекрутинг: процессы, ATS, воронка, метрики, SLA. Обучение hiring managers. Снижение CPH на 65%. Экономия 60М₽+ для бизнеса.</p></div>
+<div class="sv" data-n="04"><h3>HR-консалтинг</h3><p>Грейдирование, salary benchmarking, performance management (review, 360, калибровки, 9-box). Org design, workforce planning, succession planning, retention-программы.</p></div>
+<div class="sv" data-n="05"><h3>Оценка и развитие</h3><p>25+ Assessment Centers (STAR, PARLA, CARE). Сертификации KPMG, SHL, TalantQ. 15+ воркшопов для техлидов: интервью, обратная связь, целеполагание, увольнения, ТК РФ. Coaching.</p></div>
+<div class="sv" data-n="06"><h3>HR-аналитика & AI</h3><p>Дашборды: Power BI, Yandex DataLens. Все метрики: TTF, CPH, QoH, eNPS, compa-ratio, ROI. AI-автоматизация: JD, скрининг, outreach, предиктивная аналитика оттока.</p></div>
+</div>
+</section>
+
+<section class="s" id="exp">
+<div class="s-tag">Карьера</div>
+<h2 class="s-h">Профессиональный <i>путь</i></h2>
+<div class="tl">
+<div class="ti"><div class="ti-d">2024 — н.в.</div><div class="ti-b"><h3>Senior IT Recruiter & Executive Search Lead</h3><div class="ti-co">ГК «Астра» — RuBackup & BRO Software</div><p>Единственный in-house рекрутер двух продуктовых юнитов. 240+ IT-наймов, 40+ leadership. Рекрутинг с нуля, экономия 60М₽. Масштабирование 48→150+ (×3). HRBP: текучесть 40%→8%, eNPS +16, 15+ воркшопов, performance review, грейдирование, salary benchmarking.</p><div class="ti-tags"><span class="tt">C++</span><span class="tt">Python</span><span class="tt">Go</span><span class="tt">ML/AI</span><span class="tt">QA</span><span class="tt">DevOps</span><span class="tt">Cloud</span><span class="tt">Storage</span></div></div></div>
+<div class="ti"><div class="ti-d">2022 — 2024</div><div class="ti-b"><h3>Lead Executive Recruiter & Team Manager</h3><div class="ti-co">Мираторг, Агропромышленный холдинг (41 000+ сотр.)</div><p>50+ executive-позиций: CEO, CTO, CFO, COO, CMO, HRD, CIO, Head of (IT, Sales, Production, Export, Petfood). Команда 4 рекрутера. Международный поиск: ОАЭ, Германия, Нидерланды, США. Запуск Petfood → 200М₽. Проект «Вкусно и Точка». KPI: +20-30% каждый квартал. 2 ассесмент-центра для топ-менеджеров.</p><div class="ti-tags"><span class="tt">Executive Search</span><span class="tt">C-level</span><span class="tt">International</span><span class="tt">FMCG</span><span class="tt">IT</span></div></div></div>
+<div class="ti"><div class="ti-d">2021 — 2022</div><div class="ti-b"><h3>Executive Search Consultant</h3><div class="ti-co">Bifighter (Consulting & Executive Search)</div><p>28 C-level-позиций: CEO, CFO, CTO, CMO, CHRO. Клиенты: IT, banking, fashion/luxury, beauty, телеком. Наставничество: 3 junior → Team Lead. 4 новых ключевых клиента. Развитие IT-практики.</p><div class="ti-tags"><span class="tt">Executive Search</span><span class="tt">IT</span><span class="tt">Banking</span><span class="tt">Fashion</span></div></div></div>
+<div class="ti"><div class="ti-d">2020 — 2021</div><div class="ti-b"><h3>HR Generalist & IT Recruiter</h3><div class="ti-co">Ocean Digital (GameDev, Digital & IT, 10 000+ сотр.)</div><p>100+ IT-наймов. Команда 15 рекрутеров: productivity +150% (10→35 закрытий/мес). Unity, Backend, Frontend, Mobile, DevOps, QA. 4 executive: CTO, CPO, CMO, Lead DevOps. Внедрение ATS, Agile, Kanban, OKR в HR. eNPS: 12→28.</p><div class="ti-tags"><span class="tt">GameDev</span><span class="tt">High-Volume</span><span class="tt">Process</span><span class="tt">ATS</span></div></div></div>
+<div class="ti"><div class="ti-d">2016 — 2020</div><div class="ti-b"><h3>L&D & Assessment Specialist</h3><div class="ti-co">ПАО «Сухой» (SCAC) & Роскосмос (25 000+ сотр.)</div><p>25+ Assessment Centers (STAR, PARLA, CARE, бизнес-игры). Succession planning: 50+ HiPo, 20+ critical roles. Программы развития руководителей. Сертификации: Q Metrix Pro (KPMG), SHL Tools, TalantQ Perspectives. Проект профориентации Роскосмос.</p><div class="ti-tags"><span class="tt">L&D</span><span class="tt">Assessment</span><span class="tt">Succession</span><span class="tt">KPMG</span><span class="tt">SHL</span></div></div></div>
+</div>
+</section>
+
+<section class="s" id="results" style="background:var(--cream)">
+<div class="s-tag">Результаты</div>
+<h2 class="s-h">Цифры за <i>9 лет</i> в HR</h2>
+<div class="rg">
+<div class="rc"><div class="rc-n">500+</div><p>Наймов за карьеру. IT, executive, leadership. 4 компании, 5 индустрий.</p></div>
+<div class="rc"><div class="rc-n">100+</div><p>C-level и leadership. CEO, CTO, CFO, CPO, CMO, HRD, VP, Heads.</p></div>
+<div class="rc"><div class="rc-n">14 дней</div><p>TTH Senior IT. Рынок — 30-45. В 2× быстрее.</p></div>
+<div class="rc"><div class="rc-n">95%</div><p>Offer Acceptance. Counter-offer management.</p></div>
+<div class="rc"><div class="rc-n">60М₽</div><p>Экономии для бизнеса. In-house вместо агентств.</p></div>
+<div class="rc"><div class="rc-n">×3</div><p>Масштабирование. 48→150+ инженеров за 2 года (Astra).</p></div>
+<div class="rc"><div class="rc-n">40→8%</div><p>Текучесть (Astra). eNPS +16 п.п. 17 ключевых удержаны.</p></div>
+<div class="rc"><div class="rc-n">40+</div><p>Воркшопов и Assessment Centers. KPMG, SHL, TalantQ сертификации.</p></div>
+</div>
+</section>
+
+<section class="s ws" id="workshops">
+<div class="s-tag">Воркшопы и обучение</div>
+<h2 class="s-h">Обучаю руководителей <i>нанимать, развивать и удерживать</i></h2>
+<div class="ws-grid">
+<div class="ws-card"><h3>Как проводить техническое интервью</h3><p>Структурированные интервью по модели Google: единые вопросы, шкала оценки, калибровка. Как оценивать hard skills и culture fit за 45 минут. Практика с ролевыми играми. Сертифицированные методики STAR, PARLA, CARE.</p><div class="ws-for">Для: CTO, техлидов, senior-разработчиков</div></div>
+<div class="ws-card"><h3>Performance Review и обратная связь</h3><p>Модель SBI (Situation—Behavior—Impact). Как проводить 1-1. Как работать с low performers через PIP. Калибровочные сессии и 9-box grid. Succession planning и ИПР для HiPo.</p><div class="ws-for">Для: руководителей всех уровней</div></div>
+<div class="ws-card"><h3>Сложные увольнения и ТК РФ</h3><p>Юридическая подготовка: документация, PIP, соглашение сторон. Как уволить без суда (10+ кейсов с нулём судебных споров). Коммуникация с командой. Compliance и HR-аудит.</p><div class="ws-for">Для: руководителей, HR, юристов</div></div>
+<div class="ws-card"><h3>Assessment Center и оценка персонала</h3><p>Проектирование и проведение AC (25+ проведённых). Методики: STAR, PARLA, CARE, бизнес-игры, групповые дискуссии. Инструменты: Q Metrix Pro (KPMG), SHL, TalantQ Perspectives. Формирование кадрового резерва.</p><div class="ws-for">Для: HR, HRD, руководителей</div></div>
+</div>
+</section>
+
+<section class="s" id="blog" style="background:var(--bg)">
+<div class="s-tag">Заметки</div>
+<h2 class="s-h">Мысли о найме, людях и <i>tech-рынке</i></h2>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:32px">
+
+<article style="background:var(--cream);padding:40px;border-top:2px solid var(--gold)">
+<div style="font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pale);margin-bottom:14px">Рекрутинг</div>
+<h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:400;margin-bottom:16px">Почему ваш senior C++ «не ищет работу»</h3>
+<p style="font-size:.82rem;color:var(--mid);line-height:1.85;font-weight:300">Самые сильные разработчики не обновляют резюме на hh. Они не листают вакансии в воскресенье вечером. Они не откликаются на ваш InMail с текстом «у нас интересные задачи и дружная команда».<br><br>Они сидят в трёх Telegram-чатах, контрибьютят на GitHub, иногда выступают на конференциях. У них 5+ предложений в месяц, и они все игнорируют.<br><br>Чтобы такой человек ответил, нужно три вещи: (1) понимать его стек на уровне «я знаю, что такое многопоточность и RAII, и знаю, зачем вам это», (2) писать конкретно — стек, задачи, ЗП в первом сообщении, (3) быть готовым к разговору через 20 минут, а не «мы вам перезвоним».<br><br>Я закрывала C++ senior за 14 дней. Не потому что мне везёт. Потому что я пишу в Telegram, а не на hh. Потому что первое сообщение — 80 слов, а не 300. И потому что я знаю разницу между STL и Boost.<br><br><i>А вы уверены, что ваш рекрутер понимает, кого ищет?</i></p>
+</article>
+
+<article style="background:var(--cream);padding:40px;border-top:2px solid var(--gold)">
+<div style="font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pale);margin-bottom:14px">Executive Search</div>
+<h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:400;margin-bottom:16px">Executive search изнутри: как на самом деле ищут CTO</h3>
+<p style="font-size:.82rem;color:var(--mid);line-height:1.85;font-weight:300">Когда компании нужен CTO, никто не выкладывает вакансию на hh и не ждёт откликов. Это так не работает.<br><br>Реальный процесс: (1) смотрим компании похожего масштаба и домена, (2) составляем long list из 50-100 человек — неважно, ищут ли они работу, (3) выходим через общих знакомых, конференции, публикации, (4) первый разговор — не «у нас вакансия», а «хочу обсудить ваше видение».<br><br>Поиск CTO — это не про «закрыть вакансию». Это про посмотреть рынок, откалиброваться и найти правильного человека. Иногда результат поиска — решение в пользу внутреннего кандидата. И это тоже правильный результат.<br><br>Главное: executive search всегда закрытый. Вы никогда не увидите пост «ищем CEO» в публичном канале. Если видите — это не executive search.<br><br><i>А вы знаете, как о вас отзываются бывшие коллеги, которых вы не указывали в рекомендациях?</i></p>
+</article>
+
+<article style="background:var(--cream);padding:40px;border-top:2px solid var(--gold)">
+<div style="font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pale);margin-bottom:14px">HR-аналитика</div>
+<h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:400;margin-bottom:16px">Три аналитика отказались от оффера. Проблема не в зарплате</h3>
+<p style="font-size:.82rem;color:var(--mid);line-height:1.85;font-weight:300">Реальный кейс. Три senior-аналитика подряд прошли все этапы и отказались. Причина в каждом фидбэке одна: «не заинтересовали процессы, стартап».<br><br>Первая реакция HM: «Давайте поднимем ЗП». Моя реакция: «Подожди. Давай посмотрим на данные.»<br><br>Я собрала: бюджет vs медиана рынка (разрыв 15%), описание вакансии (сухое, без продуктовой истории), скрипт собеседования (ни слова про влияние и масштаб задач). Проблема не в деньгах — проблема в EVP.<br><br>Что сделала: переписала JD с фокусом на продуктовый impact, подключила фаундера к финальному интервью, подняла вилку на 15%. Следующий кандидат принял.<br><br>Рекрутинг — это не «найди кого-нибудь». Это — «пойми, почему не находится, и исправь системную причину».<br><br><i>Когда в последний раз вы анализировали отказы кандидатов не как единичные случаи, а как паттерн?</i></p>
+</article>
+
+<article style="background:var(--cream);padding:40px;border-top:2px solid var(--gold)">
+<div style="font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pale);margin-bottom:14px">Управление</div>
+<h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:400;margin-bottom:16px">Counter-offer: почему 80% потом всё равно уходят</h3>
+<p style="font-size:.82rem;color:var(--mid);line-height:1.85;font-weight:300">Кандидат прошёл 4 этапа. Оффер на столе. И тут: «Мой работодатель поднял мне зарплату на 30%, я решил остаться».<br><br>Знакомо? За 9 лет я видела это десятки раз. И вот что я знаю: 50-80% людей, принявших counter-offer, уходят в течение 12 месяцев. Данные стабильны по всем рынкам.<br><br>Почему? Потому что причина ухода — не деньги. Деньги — симптом. Настоящие причины: нет роста, нет интересных задач, плохой руководитель, потолок. Counter-offer решает симптом, но не причину.<br><br>Что я делаю: на первом скрининге спрашиваю: «Если ваш работодатель сделает встречное предложение — что будете делать?» Если кандидат говорит «рассмотрю» — я знаю, что это risk. И работаю с этим заранее, а не в день оффера.<br><br><i>Если вас ценят только когда вы уходите — что это говорит о компании?</i></p>
+</article>
+
+<article style="background:var(--cream);padding:40px;border-top:2px solid var(--gold)">
+<div style="font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pale);margin-bottom:14px">AI в HR</div>
+<h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:400;margin-bottom:16px">AI не заменит рекрутера. Но рекрутер с AI заменит того, кто без</h3>
+<p style="font-size:.82rem;color:var(--mid);line-height:1.85;font-weight:300">За последний год я сэкономила 150+ часов рабочего времени через AI. Вот конкретно что делаю:<br><br>Генерация JD: раньше 2 часа, сейчас 30 минут. Claude пишет черновик, я редактирую под контекст и tone of voice команды.<br><br>Скрининг резюме: 500 резюме за 2 часа вместо 3 дней. Загружаю в Claude с промптом «оцени соответствие 1-10, укажи gaps и вопросы для скрининга». Точность: 90% совпадение с моей оценкой (проверяла на 100 параллельно).<br><br>Outreach: AI пишет персонализированный черновик на основе профиля кандидата. Я правлю 20% — и отправляю. Response rate вырос на 15%.<br><br>Но. AI не заменит разговор с кандидатом. Не заменит интуицию на интервью. Не заменит переговоры по офферу в 11 вечера. Не заменит понимание, почему именно этот человек подойдёт именно в эту команду.<br><br>AI — это экзоскелет. Усиливает сильного, но не делает слабого сильным.<br><br><i>А вы уже используете AI в работе? Или всё ещё ждёте, пока «станет понятнее»?</i></p>
+</article>
+
+<article style="background:var(--cream);padding:40px;border-top:2px solid var(--gold)">
+<div style="font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pale);margin-bottom:14px">Культура</div>
+<h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:400;margin-bottom:16px">Текучесть 40% — это не HR-проблема. Это бизнес-катастрофа</h3>
+<p style="font-size:.82rem;color:var(--mid);line-height:1.85;font-weight:300">Когда я пришла в компанию, текучесть была 40%+. Каждый четвёртый уходил. Для R&D-команды это смерть: уходит senior — с ним уходят знания, контекст, скорость. Замена стоит 6 окладов и 3-6 месяцев.<br><br>Что я сделала: exit-интервью с каждым. Не формальное «заполните анкету», а разговор на 40 минут. Три корневые причины: нет карьерного роста (нет грейдов), нет обратной связи (руководители не умеют), хаос в процессах (нет онбординга).<br><br>Три действия: (1) грейдирование с прозрачными вилками — каждый знает, что нужно для следующего уровня, (2) performance review 2 раза в год + обучение руководителей фидбэку через SBI-модель, (3) онбординг 30/60/90 — ментор, buddy, чеклист.<br><br>Результат за 18 месяцев: текучесть 8%. eNPS +16 пунктов. 17 ключевых сотрудников с офферами на руках — остались.<br><br>HR не «поддерживает бизнес». HR определяет, будет ли бизнес через год.<br><br><i>А вы знаете свою текучесть? И — главное — знаете, почему люди уходят?</i></p>
+</article>
+
+</div>
+</section>
+
+<section class="s ct" id="contact">
+<div class="s-tag">Контакты</div>
+<h2 class="s-h">Давайте обсудим <i>вашу задачу</i></h2>
+<div class="ct-body">
+<div>
+<p class="lead">Открыта к предложениям в IT-рекрутинге, executive search, HR-консультировании и оценке персонала. Помогу найти конкретного специалиста, построить команду, провести Assessment Center или воркшоп для руководителей.</p>
+<p class="lead">Предпочитаю начать с короткого звонка на 15 минут — понять задачу и предложить формат.</p>
+</div>
+<div class="cl">
+<a href="mailto:chixhelena@gmail.com"><span class="cl-l">Email</span><span class="cl-v">chixhelena@gmail.com</span></a>
+<a href="https://t.me/ElenaExecIT"><span class="cl-l">Telegram</span><span class="cl-v">@ElenaExecIT</span></a>
+<a href="tel:+79803346560"><span class="cl-l">Телефон</span><span class="cl-v">+7 (980) 334-65-60</span></a>
+<a href="https://www.linkedin.com/in/elenaexecit"><span class="cl-l">LinkedIn</span><span class="cl-v">linkedin.com/in/elenaexecit</span></a>
+</div>
+</div>
+</section>
+
+<footer><p>© 2026 Елена Чигиринова</p><p>Москва · Remote / Hybrid</p></footer>
+</body>
+</html>
